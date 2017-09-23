@@ -1,0 +1,354 @@
+/*-----------------------------------------------------------------------------------
+
+	Theme Name: FluidApp
+	Author: Two2Twelve Themes
+	Author URI: http://themes.two2twelve.com
+	Version: 1.0
+	
+	Stylesheet: Media Queries
+	
+-----------------------------------------------------------------------------------*/
+/* For iPhones and Mobile */
+@media only screen and (max-width:750px) { 
+	
+	div#page_wrapper {
+		width: 320px;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+	.container {
+		width: auto;
+		margin: 0 auto;
+	}
+	header {
+		padding: 0px 10px 0px 10px;
+		margin-bottom: 0px;
+	}
+		header nav ul,
+		header nav span.arrow { display: none !important; }
+		header .select-menu   { display: block; }
+	section { padding: 0px 10px 0px 10px; }
+	section #app_info {
+		text-align: center;
+		float: none;
+		width: 100%;
+		padding: 0;
+		margin-top: 30px;
+	}
+		section #app_info a.logo img{ width: 260px; margin-left:-5%; }
+		section #app_info span.tagline {
+			margin-bottom: 15px;
+			font-size: 18px;
+		}
+		section #app_info p { margin-bottom: 20px; }
+		section #app_info .buttons { width: 320px; float: none; margin: 0 auto; 
+				margin-bottom: 15px; }
+			section #app_info .buttons a:first-child { margin: 0; }
+			.large_button,
+			section #app_info .buttons .large_button {
+				width: 115px;
+				font-size: 17px;
+				margin-left: 10px;
+			}
+				.large_button em { font-size: 8px; }
+		
+		section #app_info .price {
+			clear: both;
+			background: url('../images/light-arrow.png') no-repeat top; float: none;
+			padding-top: 50px;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+			section #app_info .price.left_align p {
+				text-align: center;
+			}
+			section #app_info .price p {
+				font-family: 'Nothing You Could Do', cursive;
+				font-size: 17px;
+				color: #1f1f1f;
+				margin-bottom: 25px;
+			}		
+		
+		section #app_info .side-video {
+			width: 345px;
+			height: 194px;
+			top: 0;
+			left: 10;
+		}
+		section #app_info .side-video img,
+		section #app_info .side-video iframe { width: 245px; height: 194px; top: 49px; padding-right: 60px;}
+		
+		/* Home Info */
+		
+		section #home_info {
+		text-align: center;
+		float: none;
+		width: 100%;
+		padding: 0;
+		margin-top: 30px;
+	}
+		section #home_info a.logo img{ width: 260px; margin-left:-5%; }
+		section #home_info span.tagline {
+			margin-bottom: 15px;
+			font-size: 18px;
+		}
+		section #home_info p { margin-bottom: 20px; }
+		section #home_info .buttons { width: 320px; float: none; margin: 0 auto; margin-bottom: 20px; }
+			section #home_info .buttons a:first-child { margin: 0; }
+			.large_button,
+			section #home_info .buttons .large_button {
+				width: 115px;
+				font-size: 17px;
+				margin-left: 10px;
+			}
+				.large_button em { font-size: 8px; }
+				section #app_info .buttons .large_button#blackberry,
+				.large_button#blackberry,
+				section #app_info .buttons .large_button#windows,
+				.large_button#windows { font-size: 14px }
+				
+	section #pages {
+		background: none;
+		width: 100%;
+		float: none;
+		padding: 0;
+		margin-top: 10px;
+	}
+	section #pages .top_shadow {
+		background: url('../images/light-shadow_vertical.png') no-repeat top center;
+		width: 320px;
+		height: 60px;
+		position: static;
+	}
+	section #pages .bottom_shadow { display: none; }
+	section #pages div.page 			{ padding-top: 20px; }
+	section #pages .content_box 	{ padding-top: 5px; }
+	
+	/* Homepage Slider */
+	
+	div#slider { width: 320px; height: 180px; margin: 1px 0px 0px 0px; }
+		div.echo-nav { width: 320px; } 
+			div.echo-nav a{ width: 20px; }
+		div#slider div.slide { height: 180px; }
+			div#slider div.slide .background {
+				top: 10px;
+				left: -5px;
+			}
+			div#slider div.slide .foreground {
+				left: 85px;
+				top: 30px;			
+			}
+			
+			
+		/* iPhones */
+		div.slide .background.iphone-black,
+		div.slide .background.iphone-white { -webkit-background-size: 220px 321px; background-size: 220px 321px; }
+			div.slide .background.iphone-black img,
+			div.slide .background.iphone-black iframe,
+			div.slide .background.iphone-white img,
+			div.slide .background.iphone-white iframe { width: 123px; height: 185px; top: 50px; left: 47px; }
+		div.slide .foreground.iphone-black,
+		div.slide .foreground.iphone-white { -webkit-background-size: 225px 348px; background-size: 225px 348px; }
+			div.slide .foreground.iphone-black img,
+			div.slide .foreground.iphone-black iframe,
+			div.slide .foreground.iphone-white img,
+			div.slide .foreground.iphone-white iframe { width: 133px; height: 200px; top: 55px; left: 48px; }
+		
+		/* iPads */
+		div.slide .ipad-black,
+		div.slide .ipad-white { -webkit-background-size: 325px 334px; background-size: 325px 334px; }
+			div.slide .ipad-black img,
+			div.slide .ipad-black iframe,
+			div.slide .ipad-white img,
+			div.slide .ipad-white iframe { width: 275px; height: 155px; top: 26px; left: 20px; }
+	/* Team */
+	div.about_us .one_half {
+		float: none;
+		width: 100%;
+	}
+	div.about_us .one_half.column_last {
+		border-bottom: 1px solid #eaeaea;
+		padding-bottom: 20px;
+		margin-bottom: 0;
+	}
+	div.team_members .person{
+		float: none;
+		width: 100%;
+	}
+		div.team_members .person:last-child { margin-bottom: 0; }
+	/* Features */
+	div.feature_list .one_half {
+		float: none;
+		width: 100%;
+	}
+	div.feature_list .one_half:last-child { margin-bottom: 0; }
+	/* Screenshots */
+	div.screenshot_grid .one_third {
+		width: 45%;
+	}
+	div.screenshot_grid .one_third.column_last { 
+		margin-right: 4% !important;
+	}
+	div.screenshot_grid div a { width: 120px; height: 85px; }
+	/* Updates */
+	article.release { width: 300px; }
+	article.release:last-child { margin-bottom: 0; }
+		article.release h2 { padding-right: 5px; }
+	/* Press */
+	div.press_mentions ul li:last-child { margin-bottom: 0; }
+	/* Contact */
+	div#contact_form p.left,
+	div#contact_form p.right {
+		float: none;
+		width: auto;
+		margin-bottom: 20px;
+	}
+	div#contact_form div.row { margin-bottom: 0px; }
+	div#contact_form textarea {
+		width: 280px;
+		margin-top: 10px;
+	}
+	
+	/* Review */
+	
+	#smarter-wordpress-sites .wrap,
+	#solutions .wrap
+	 {
+		width: 100%;
+	}
+	
+	#solutions {
+		background: #e7e7e7;
+		border-bottom: 5px solid #d0cece;
+		border-top: 5px solid #d0cece;
+		float: left;
+		padding: 10px 0 0 0;
+	}
+	
+	#solutions .wrap {
+		height: auto;
+		text-align: center;
+	}
+	
+	#solutions .solution {
+		float: none;
+		display: inline-block;
+		margin: 0 0 20px 0;
+		width: 75%;
+	}
+	
+	#solutions .solution .pointer{
+		display: none;
+	}
+	
+	#smarter-wordpress-sites h3 {
+		font-size: 42px;
+		line-height: 42px;
+		margin-bottom: 40px;
+	}
+	
+	#smarter-wordpress-sites img {
+		display: none;
+	}
+	
+	#smarter-wordpress-sites .solutions div {
+		float: none;
+		margin: 10px 0 40px 0 !important;
+		padding-top: 50px;
+		width: auto;
+	}
+	
+	#smarter-wordpress-sites .solutions p {
+		margin: 0 25px 25px;
+		height:40px;
+		padding: 0;
+	}
+	
+	/* Footer */
+	footer { padding-top: 5px;	}
+	
+}
+/* For iPads and Tablets */
+@media screen and (min-width:751px) and (max-width:970px) { 
+
+	div#page_wrapper {
+		/* width: 768px; */
+		overflow: hidden;
+		margin: 0 auto;
+	}
+	.container {
+		width: auto;
+		margin: 0 auto;
+	}
+
+	header {
+		padding: 0px 20px 0px 10px;
+		margin-bottom: 0px;
+	}
+	div#slider {
+		margin-left: -40px;
+		margin-top: 0px;
+	}
+	section {
+		padding: 0px 10px 0px 10px;
+	}
+	section #app_info {
+		text-align: center;
+		float: none;
+		width: 550px;
+		padding: 0;
+		margin: 30px auto 0px auto;
+	}
+		section #app_info .buttons { width: 360px; float: right; padding-right: 50px; margin: 0 auto; margin-bottom: 15px; }
+			section #app_info .buttons a:first-child { margin: 0; }
+			
+		section #app_info .price {
+			clear: both;
+			background: url('../images/light-arrow.png') no-repeat top; float: none;
+			padding-right: 40px;
+			padding-top: 50px;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		section #app_info .price.right_align { background-position: 250px 0px; }
+		section #app_info .price.left_align { background-position: 70px 0px; }
+			section #app_info .price.left_align p {
+				text-align: center;
+			}
+			section #app_info .price p {
+				font-family: 'Nothing You Could Do', cursive;
+				font-size: 20px;
+				color: #1f1f1f;
+				margin-bottom: 40px;
+			}		
+			
+			
+	section #home_info {
+		text-align: center;
+		float: none;
+		width: 550px;
+		padding: 0;
+		margin: 30px auto 0px auto;
+	}
+		section #home_info .buttons { width: 360px; float: right; padding-right: 50px; margin: 0 auto; margin-bottom: 20px;}
+			section #home_info .buttons a:first-child { margin: 0; }
+	
+	section #pages {
+		background: none;
+		width: 550px;
+		float: none;
+		padding: 0;
+		margin: 20px auto 0px auto;
+	}
+	section #pages .top_shadow {
+		background: url('../images/light-shadow-ipad_vertical.png') no-repeat top center;
+		width: 550px;
+		height: 60px;
+		position: static;
+	}
+	section #pages .bottom_shadow { display: none; }
+	section #pages div.page 			{ padding-top: 30px; }
+	section #pages .content_box 	{ padding-top: 5px; }
+	
+	/* Footer */
+	footer { padding-top: 40px;	}
